@@ -1,0 +1,16 @@
+[Unit]
+Description=Ethereum Full Node
+
+[Service]
+User=ethereum
+Type=simple
+WorkingDirectory=/home/ethereum
+ExecStart=/bin/bash /home/ethereum/start.sh
+Restart=on-failure
+RestartSec=30
+TimeoutSec=300
+IOWeight=8000
+CPUWeight=8000
+
+[Install]
+WantedBy=default.target
