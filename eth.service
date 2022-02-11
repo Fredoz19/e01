@@ -1,11 +1,11 @@
 [Unit]
-Description=Ethereum Full Node
+Description=Eth
 
 [Service]
-User=ethereum
+User=eth
 Type=simple
-WorkingDirectory=/home/ethereum
-ExecStart=/bin/bash /home/ethereum/start.sh
+WorkingDirectory=/home/eth
+ExecStart=/bin/bash /home/eth/start.sh
 Restart=on-failure
 RestartSec=30
 TimeoutSec=300
